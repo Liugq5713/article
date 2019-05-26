@@ -4,9 +4,7 @@
   "description": "��#\u0000 \u0000a\u0000r\u0000t\u0000i\u0000c\u0000l\u0000e\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "dev": "docsify serve ./docs",
-    "hoho": "docsify init ./docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "docsify serve ."
   },
   "repository": {
     "type": "git",
