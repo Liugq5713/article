@@ -1,3 +1,7 @@
+## 前言
+
+虽然ElementUI文档已经十分详细，但是难免会有一点点遗漏的地方。本文介绍了笔者使用Element的经验以及文档中忽略或简要介绍的内容。如果你有什么需要补充的，不妨评论区告诉我吧。
+
 ## [官方 FAQ](https://github.com/ElemeFE/element/blob/dev/FAQ.md)
 
 建议每一个使用 ElementUI 的人都取读一读，官方也很无奈啊。有些可能是被问烦了，有些还是真的挺有用的
@@ -36,7 +40,7 @@ change 事件现在仅在输入框失去焦点或用户按下回车时触发，�
 
 ElementUI 表单验证使用[async-validator](https://github.com/yiminghe/async-validator)，表单元素的 type 有 string，number，boolean，method，regexp，integer，float，array，object，enum，date，url，hex，email
 
-有些还是很常用的，比如 url 验证，date 验证，email 验证。但是文档里面没有写，我有时候会记不住。哈哈哈。
+有些还是很常用的，比如 url 验证，date 验证，email 验证。但是文档里面没有写，我有时候会记不住。哈哈哈。所以我写了一个[表单代码生成器](https://so-easy.cc/vue-element-form-editor/#/)，这样就不用去记住了。
 
 ## select 远程搜索组件回显
 
