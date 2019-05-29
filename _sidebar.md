@@ -1,3 +1,3 @@
 - [首页]()
 - [Element 使用经验](element)
-- [设计一个 vue 组件【理论篇】](vueComponent)
+- [storybook 使用指南](storybook)
