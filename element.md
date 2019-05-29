@@ -65,7 +65,7 @@ setSelected() {
   }
 ```
 
-由代码可知， Element 设置 options 是一个 push 操作，所以 options 后续改变也不会影响我选中的值，完美解决了我的需求
+由代码可知， Element 设置 选中的值是一个 push 操作，所以 options 后续改变也不会影响我选中的值，完美解决了我的需求
 
 ## 自定义 element-ui 样式
 
