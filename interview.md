@@ -1,3 +1,7 @@
+- HTML
+- CSS
+- JS
+
 ## 基本算法
 
 ### 常见的排序算法
@@ -37,6 +41,22 @@ for(var i = 1;i≤100;i++){
 - 减少 DOM 访问次数，尽量使用 JavaScript 处理
 - 使用局部变量存储 DOM 引用
 - 减少重绘和重排
+
+## webpack 打包
+
+webpack 构建过程
+
+从 entry 里配置的 module 开始递归解析 entry 依赖的所有 module
+
+每找到一个 module，就会根据配置的 loader 去找对应的转换规则
+对 module 进行转换后，再解析出当前 module 依赖的 module
+这些模块会以 entry 为单位分组，一个 entry 和其所有依赖的 module 被分到一个组 Chunk
+最后 webpack 会把所有 Chunk 转换成文件输出
+在整个流程中 webpack 会在恰当的时机执行 plugin 里定义的逻辑
+
+## 常见的 DIV 布局
+
+- 两栏布局 => BFC
 
 ## DOM 事件
 
@@ -92,7 +112,16 @@ function throttle(func, wait) {
 
 ## v-if 和 v-show 区别
 
-## 组件重新渲染
+## v-if 可以将组件重新渲染嘛
 
-- v-if 可以将组件重新渲染
-- key 值
+## vue 父子组件通信
+
+## 异步代码
+
+promise
+
+获取 setTimeout 的值
+
+## 输出
+
+## JQuery 链式调用
