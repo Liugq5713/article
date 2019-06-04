@@ -4,6 +4,21 @@
 
 ## 基本算法
 
+### 常见的排序算法
+
+#### 交换位置
+
+- 冒泡排序：过相邻的比较和交换
+- 选择排序：通过对整体的选择
+
+#### 自建位置
+
+- 插入排序：通过比较找到合适的位置插入元素来达到排序的目的
+
+### 实践题
+
+如果是数组，[1,2,3,4,5,6,7,8,9]，采用什么排序方法运算速度最快，为什么
+
 ## DOM 操作
 
 ### 增删改查
@@ -27,22 +42,21 @@ for(var i = 1;i≤100;i++){
 - 使用局部变量存储 DOM 引用
 - 减少重绘和重排
 
+## webpack 打包
 
-## webpack打包
+webpack 构建过程
 
-webpack构建过程
+从 entry 里配置的 module 开始递归解析 entry 依赖的所有 module
 
-从entry里配置的module开始递归解析entry依赖的所有module
+每找到一个 module，就会根据配置的 loader 去找对应的转换规则
+对 module 进行转换后，再解析出当前 module 依赖的 module
+这些模块会以 entry 为单位分组，一个 entry 和其所有依赖的 module 被分到一个组 Chunk
+最后 webpack 会把所有 Chunk 转换成文件输出
+在整个流程中 webpack 会在恰当的时机执行 plugin 里定义的逻辑
 
-每找到一个module，就会根据配置的loader去找对应的转换规则
-对module进行转换后，再解析出当前module依赖的module
-这些模块会以entry为单位分组，一个entry和其所有依赖的module被分到一个组Chunk
-最后webpack会把所有Chunk转换成文件输出
-在整个流程中webpack会在恰当的时机执行plugin里定义的逻辑
+## 常见的 DIV 布局
 
-## 常见的DIV布局
-
-- 两栏布局  => BFC
+- 两栏布局 => BFC
 
 ## DOM 事件
 
@@ -58,11 +72,11 @@ webpack构建过程
 
 ```js
 function debounce(func, wait) {
-  let timeout
+  let timeout;
   return function() {
-    clearTimeout(timeout)
-    timeout = setTimeout(func, wait)
-  }
+    clearTimeout(timeout);
+    timeout = setTimeout(func, wait);
+  };
 }
 ```
 
@@ -70,34 +84,44 @@ function debounce(func, wait) {
 
 ```js
 function throttle(func, wait) {
-  let timeout
+  let timeout;
   return function() {
-    context = this
-    args = arguments
+    context = this;
+    args = arguments;
     if (!timeout) {
       timeout = setTimeout(function() {
-        timeout = null
-        func.apply(context, args)
-      }, wait)
+        timeout = null;
+        func.apply(context, args);
+      }, wait);
     }
-  }
+  };
 }
 ```
+
 ## 常见的项目优化
 
+## vue 相关
+
+## 生命周期
+
+## vue 的双向绑定
+
+## v-model 具体是怎么实现的
+
+## vue 的父子组件通信
 
 ## v-if 和 v-show 区别
 
-## v-if可以将组件重新渲染嘛
+## v-if 可以将组件重新渲染嘛
 
 ## vue 父子组件通信
 
-## 异步代码 
+## 异步代码
 
 promise
 
-获取setTimeout 的值
+获取 setTimeout 的值
 
 ## 输出
 
-## JQuery链式调用
+## JQuery 链式调用
