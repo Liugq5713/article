@@ -1,0 +1,21 @@
+{
+  "name": "article",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000f[`N\u0014{�� \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"docsify serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liugq5713/article.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liugq5713/article/issues"
+  },
+  "homepage": "https://github.com/Liugq5713/article#readme"
+}
