@@ -1,3 +1,0 @@
-- [首页]()
-- [storybook 使用指南](./storybook)
-- [面试题目](./interview)
